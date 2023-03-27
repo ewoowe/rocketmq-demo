@@ -10,7 +10,7 @@ import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 
 import java.util.List;
 
-public class Consumer {
+public class Consumer1GroupNM1 {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("nm");
         consumer.setNamesrvAddr("127.0.0.1:9876");

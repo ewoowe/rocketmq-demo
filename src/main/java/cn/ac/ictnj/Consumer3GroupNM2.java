@@ -11,9 +11,9 @@ import org.apache.rocketmq.common.message.MessageExt;
 
 import java.util.List;
 
-public class Consumer2 {
+public class Consumer3GroupNM2 {
     public static void main(String[] args) throws MQClientException {
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("nm");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("nm2");
         consumer.setNamesrvAddr("127.0.0.1:9876");
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
         consumer.subscribe("NodeDiscover", "*");
@@ -30,6 +30,6 @@ public class Consumer2 {
             }
         });
         consumer.start();
-        System.out.println("nm 接收消息服务启动");
+        System.out.println("nm2 接收消息服务启动");
     }
 }
